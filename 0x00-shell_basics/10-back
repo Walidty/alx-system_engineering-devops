@@ -1,14 +1,2 @@
 #!/bin/bash
-#!/bin/bash
-
-function change_to_previous_directory() {
-    current_dir=$(pwd)
-    parent_dir=$(dirname "$current_dir")
-
-    if [ "$current_dir" = "$parent_dir" ]; then
-        echo "You are already at the root directory."
-    else
-        cd "$parent_dir"
-    fi
-}
-
+cd /$(pwd)/$var
